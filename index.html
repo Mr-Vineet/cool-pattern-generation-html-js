@@ -54,7 +54,7 @@
           div.style.width = "100px";
           div.style.backgroundColor =
             colorPallete[Math.round(Math.random() * colorPallete.length)];
-          // div.style.borderRadius = "50%";
+          div.style.borderRadius = "50%";
 
           main.appendChild(div);
         }
@@ -65,7 +65,8 @@
 
         divs.forEach((div) => {
           const randomValue = Math.floor(Math.random() * 100);
-
+          div.style.marginLeft = "10px";
+          div.style.marginRight = "10px";
           div.style.width = `${randomValue}px`;
           div.style.height = `${randomValue}px`;
           div.style.backgroundColor =
